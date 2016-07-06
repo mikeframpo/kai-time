@@ -1,0 +1,18 @@
+
+# Recipe example file
+# essentially just a list of ingredients.
+# Any further instruction must be provided as
+# a comment (line starting with #)
+#
+# Each ingredient may start with a quantity, expressed as a decimal
+
+# The following is a recipe for chickpea curry taken from Jamie Oliver's website
+# http://www.jamieoliver.com/recipes/member-recipes/recipe-detail/2817/
+
+1, chickp
+0.5, spinach
+1, onion
+2, garlic
+1, tin-toms
+1, rice
+

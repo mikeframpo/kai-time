@@ -1,0 +1,27 @@
+
+# Ingredients list
+#
+# the order in which ingredients occur in this list
+# is the same as they will appear in the final list
+# 
+# Format
+# ingredient-code (must be unique), description
+#
+# The ingredient-code can be any string
+
+# Fresh fruit and veg
+mush, mushrooms
+onion, onion
+garlic, clove of garlic
+pumpkin, pumpkin
+
+# Frozen
+spinach, bag of frozen spinach
+
+# Tinned veges
+chickp, tin chickpeas
+tin-toms, tin tomatoes
+
+# Cereals
+rice, cup of rice
+
