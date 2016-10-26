@@ -14,6 +14,16 @@ mush, mushrooms
 onion, onion
 garlic, clove of garlic
 pumpkin, pumpkin
+sprouts, sprouts
+tomatoes, tomatoes
+
+# Dairy
+milk, Milk
+yog, Yoghurt pottle
+hummus, Hummus
+cheese, Cheese block
+marg, Margerine
+salami, Salami
 
 # Frozen
 spinach, bag of frozen spinach
@@ -21,7 +31,21 @@ spinach, bag of frozen spinach
 # Tinned veges
 chickp, tin chickpeas
 tin-toms, tin tomatoes
+peaches, tinned peaches
+coconut, Coconut milk
+
+eggs, eggs
 
 # Cereals
 rice, cup of rice
+bread, loaf of bread
+weetbix, Weetbix
+oats, Oats
 
+# Spices
+garammasala, Garam masala
+tumeric, Tumeric
+coriander, Coriander
+
+# Misc
+toothpaste, Toothpaste

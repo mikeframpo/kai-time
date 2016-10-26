@@ -1,6 +1,8 @@
 #!/bin/python2
 
 import argparse
+import datetime
+import sys
 
 ingredients = {}
 tobuy = {}
@@ -46,26 +48,35 @@ def read_recipe(rfile):
         ingred_count[0] += quantity
         tobuy[key] = ingred_count
 
-def print_shopping_list():
+def print_shopping_list(save):
 
     shop = tobuy.values()
     shop.sort(key=lambda quantity: quantity[1][0])
 
-    print('=== Shopping list ===')
-    print('== Remember, responsible trolley operators keep left ==')
-    print('')
+    if save:
+        out = open(str(datetime.date.today()), 'w')
+    else:
+        out = sys.stdout
+
+    out.write('=== Shopping list ===\n')
+    out.write('== Remember, responsible trolley operators keep left ==\n\n')
 
     for item in shop:
-        print('%.1fx %s' % (item[0], item[1][1]))
+        out.write('%.1fx %s\n' % (item[0], item[1][1]))
 
-    print('')
-    print('== Generated from recipes ==')
+    out.write('\n')
+    out.write('== Generated from recipes ==\n')
 
     for recipe in recipes:
-        print(recipe)
+        out.write(recipe)
+        out.write('\n')
+
+    if save:
+        out.close()
 
 parser = argparse.ArgumentParser(description='Generate a funky shopping list')
 parser.add_argument('recipes', metavar='recipe', type=str, nargs='+')
+parser.add_argument('--save', action='store_true')
 args = parser.parse_args()
 
 read_ingredients_file()
@@ -73,6 +84,6 @@ read_ingredients_file()
 for recipe in args.recipes:
     read_recipe(recipe)
 
-print_shopping_list()
+print_shopping_list(args.save)
 
 
